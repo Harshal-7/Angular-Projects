@@ -1,0 +1,15 @@
+<h1 [style.color] = "'green'">
+  Inside App Component
+</h1>
+
+<h1>
+  Data from TS to HTML : {{str}}
+</h1>
+
+<input #Mydata type = "text">
+
+<button (click) = "Send(Mydata.value)">
+  Send Data
+</button>
+
+<h1>Data entered in textarea is : {{value}} </h1>

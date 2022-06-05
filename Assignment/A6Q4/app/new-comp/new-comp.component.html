@@ -1,0 +1,23 @@
+<input #Input type="text">
+
+<button (click) = "Submit(Input.value)">
+    Submit
+</button>
+
+<h3 [style.color] = "'darkgreen'"> Name in Small Case : </h3>
+<h1 class = "lowercase"> {{value}} </h1>
+
+<br>
+
+<h3 [style.color] = "'darkgreen'">Name in Capital Case : </h3>
+<h1 class = "uppercase"> {{value}} </h1>
+
+<br>
+
+<h3 [style.color] = "'darkgreen'">Name of String : </h3>
+<h1 [style.color] = "'blue'"> {{value}} </h1>
+
+<br>
+
+<h3 [style.color] = "'darkgreen'">Name after Concatination : </h3>
+<h1 [style.color] = "'blue'"> {{value}} Infosystems </h1>

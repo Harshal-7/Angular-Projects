@@ -1,0 +1,8 @@
+<h1 [style.color] = "'red'">
+  Inside Parent Component
+</h1>
+
+<app-child (MyEvent) = "Data = $event"></app-child>
+<h1>
+  Message from Child : {{Data}}
+</h1>

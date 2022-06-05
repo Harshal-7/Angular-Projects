@@ -1,0 +1,11 @@
+.lowercase
+{
+    text-transform:lowercase;
+    color:blue ;
+}
+
+.uppercase
+{
+    text-transform:uppercase;
+    color:blue ;
+}
