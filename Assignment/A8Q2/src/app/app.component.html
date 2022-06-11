@@ -1,0 +1,16 @@
+<div style="text-align:center">
+
+    <app-child (MyEvent) = "Data = $event"></app-child>
+    <h1>
+        {{Data}}
+    </h1>
+
+    <button (click) = "SendMsgFromParent()">
+        Parent
+    </button>
+
+    <app-child [Data1] = "SendMsgFromParent">
+
+    </app-child>
+
+</div>
