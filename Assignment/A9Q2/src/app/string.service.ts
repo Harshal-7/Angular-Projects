@@ -5,20 +5,20 @@ import { Injectable } from '@angular/core';
 })
 export class StringService 
 {
-  public Count : number = 0;
-  public i : number = 0;
-
   public CountCap(str:string) : number
   {
-    for(this.i = 0; this.i < str.length; this.i++)
+    var Count : number = 0;
+    var i : number = 0;
+
+    for(i = 0; i < str.length; i++)
     {
-      if(str[this.i] >= 'A' && str[this.i] <= 'Z')
+      if(str[i] >= 'A' && str[i] <= 'Z')
       {
-        this.Count++;
+        Count++;
       }
     }
 
-    return this.Count;
+    return Count;
   }
 
   constructor() { }

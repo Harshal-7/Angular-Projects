@@ -20,7 +20,7 @@ export class BatchlistComponent implements OnInit
   constructor(private _obj: BatchserviceService)
   {}
 
-  ngOnInit(): void
+  ngOnInit(): void  //lifecycle hook
   {
     this.Batches = this._obj.GetBatches().subscribe(data => this.Batches = data);
   }

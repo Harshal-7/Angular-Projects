@@ -5,22 +5,22 @@ import { Injectable } from '@angular/core';
 })
 export class NumberService
 {
-  public bRet:boolean = false;
-  public i : number = 0;
-  public bFlag : boolean = true;
-
   public ChkPrime(No:number) : boolean
   {
-    for(this.i = 2; this.i <= (No/2); this.i++)
+    var i : number = 0;
+    var bRet : boolean = false;
+    var bFlag : boolean = true;
+
+    for(i = 2; i <= (No/2); i++)
     {
-      if(No % this.i == 0)
+      if(No % i == 0)
       {
-        this.bFlag = false;
+        bFlag = false;
         break;
       }
-    }  
+    }
     
-    if(this.bFlag == true)
+    if(bFlag == true)
     {
       return true;
     }
@@ -28,6 +28,7 @@ export class NumberService
     {
       return false;
     }
+
   }
 
   constructor() { }

@@ -1,0 +1,26 @@
+.appcom
+{
+    color: blueviolet;
+    background-color: rgb(255, 244, 229);
+}
+.button
+{
+    margin: 30px 10px;
+    border-color: rgb(143, 233, 255);
+}
+
+.b1
+{
+    color: rgb(217, 0, 255);
+    background-color: rgb(205, 228, 255);
+    font-weight: bold;
+    font-size: 18px;
+}
+.b2
+{
+    color: rgb(217, 0, 255);
+    background-color: rgb(205, 228, 255);
+    font-weight: bold;
+    font-size: 18px;
+
+}

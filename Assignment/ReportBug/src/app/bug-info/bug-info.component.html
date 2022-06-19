@@ -1,0 +1,89 @@
+<h1 class = "h1">
+    Date When you first notice bug
+</h1>
+
+<form class="row row-cols-sm-auto">
+    <div class="col-12">
+      <div class="dp-hidden position-absolute">
+        <div class="input-group">
+          <input name="datepicker"
+                 class="form-control"
+                 ngbDatepicker
+                 #datepicker="ngbDatepicker"
+                 [autoClose]="'outside'"
+                 (dateSelect)="onDateSelection($event)"
+                 [displayMonths]="2"
+                 [dayTemplate]="t"
+                 outsideDays="hidden"
+                 [startDate]="fromDate!"
+                 tabindex="-1">
+          <ng-template #t let-date let-focused="focused">
+            <span class="custom-day"
+                  [class.focused]="focused"
+                  [class.range]="isRange(date)"
+                  [class.faded]="isHovered(date) || isInside(date)"
+                  (mouseenter)="hoveredDate = date"
+                  (mouseleave)="hoveredDate = null">
+              {{ date.day }}
+            </span>
+          </ng-template>
+        </div>
+      </div>
+      <div class="input-group">
+        <input #dpFromDate
+               class="form-control" placeholder="yyyy-mm-dd"
+               name="dpFromDate"
+               [value]="formatter.format(fromDate)"
+               (input)="fromDate = validateInput(fromDate, dpFromDate.value)">
+        <button class="btn btn-outline-secondary calendar" (click)="datepicker.toggle()" type="button"></button>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="input-group">
+        <input #dpToDate
+               class="form-control" placeholder="yyyy-mm-dd"
+               name="dpToDate"
+               [value]="formatter.format(toDate)"
+               (input)="toDate = validateInput(toDate, dpToDate.value)">
+        <button class="btn btn-outline-secondary calendar" (click)="datepicker.toggle()" type="button"></button>
+      </div>
+    </div>
+  </form>
+
+
+
+  <h1 class="impact">
+    Impact
+  </h1>
+
+  <div class="row">
+    <div class="col">
+      <div ngbDropdown class="d-inline-block">
+    <span>
+        <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Impact</button>
+    </span>
+        
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button ngbDropdownItem>Low</button>
+          <button ngbDropdownItem>Normal</button>
+          <button ngbDropdownItem>High</button>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <h1 class = "details">
+        Detailed Explanation of bug:
+    </h1>
+
+        
+        <form class="example-form">
+            <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label></mat-label>
+            <input matInput #message maxlength="256" placeholder="">
+            </mat-form-field>
+        </form>
+        

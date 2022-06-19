@@ -1,0 +1,39 @@
+.example-form {
+    min-width: 150px;
+    max-width: 1000px;
+    width: 10%;
+    font-size:25px;
+    margin-left: 20px;
+    padding: 50px;
+
+  }
+  
+  .example-fn{
+    width: 8000%;
+    text-align: left;
+    margin: auto;
+
+  }
+  .example-ln{
+    width: 8000%;
+    text-align: right;
+  }
+  
+  .example-mail{
+    text-align:start;
+    margin-top: 50px;
+    /* margin-left: 20px; */
+    /* margin:auto; */
+  }
+  td {
+    padding-right: 50px;
+  }
+  
+  .s1
+  {
+    margin-left: auto;
+  }
+  .s2
+  {
+    margin-left: auto;
+  }

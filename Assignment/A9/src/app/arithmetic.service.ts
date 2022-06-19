@@ -5,18 +5,18 @@ import { Injectable } from '@angular/core';
 })
 export class ArithmeticService
 {
-  public Ans : number = 0;
-
   public Add(No1:number,No2:number)
   {
-    this.Ans = No1 + No2;
-    return this.Ans;
+    var Ans : number = 0;
+    Ans = No1 + No2;
+    return Ans;
   }
 
   public Sub(No1:number,No2:number)
   {
-    this.Ans = No1 - No2;
-    return this.Ans;
+    var Ans : number = 0;
+    Ans = No1 - No2;
+    return Ans;
   }
 
   constructor() { }
