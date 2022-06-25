@@ -1,0 +1,36 @@
+<div style="text-align:center;">
+
+  <h3 [style.color] = "'blue'">
+    Assignment 12 Question 3
+  </h3>
+
+  <h3 [style.color] = "'blue'">
+    Enter Number:
+  </h3>
+  <input #MyData type="text">
+
+  
+  <button (click) = "Data(MyData.value)">
+    check
+  </button>
+
+
+  <h1 class="c1">
+    {{Val | marvellousChk : "Prime"}}
+  </h1>
+
+  <h1 class="c2">
+    {{Val | marvellousChk : "Perfect"}}
+  </h1>
+
+  <h1 class="c3">
+    {{Val | marvellousChk : "Even"}}
+  </h1>
+  
+  <h1 class="c4">
+    {{Val | marvellousChk : "Odd"}}
+  </h1>
+
+
+
+</div>
