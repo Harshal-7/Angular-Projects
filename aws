@@ -1,0 +1,10 @@
+Create bucket -> Bucket Name - (no space no capital)
+
+Aws region - Mumbai(servers ahet tyat strorage ahe)
+
+acl disable(ahe ts) -> unckeck block all public access option->
+bucket versining disable(ahe ts)-> Create Bucket
+
+/////////////////////////////////////////////////
+
+ng build
