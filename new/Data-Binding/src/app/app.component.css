@@ -1,0 +1,16 @@
+.main
+{
+    text-align: center;
+    font-size: 5ch;
+    font-weight: bold;
+    padding: 3ch;
+}
+
+.img{
+
+    width: 500%;
+    height: 500px;
+    display:flex;
+    padding: 0;
+
+}

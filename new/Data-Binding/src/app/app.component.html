@@ -1,0 +1,60 @@
+<h2 class="main">
+  Data Binding
+</h2>
+
+<div class="main">
+
+  <input type="text" [(ngModel)]="formValue">
+
+  <h4>
+    {{formValue}}
+  </h4>
+
+
+  <div>
+
+    <button type="button" class="btn btn-dark" [disabled]="isDisabled" (click)="checkForm()">
+      Check Form
+    </button>
+
+  </div>
+  
+</div>
+
+
+<!-- <div class="main">
+  <h1>
+    Data Binding
+  </h1>
+
+  <div style="color: rgb(24, 77, 224);">
+    My name is {{name}}
+  </div>
+
+</div>
+
+<div class="img">
+    
+  <img [src]="imgpath" alt="">
+
+</div>
+
+<div class="main">
+  Event Binding
+  <input type="text" (input)="fun($event)"> 
+</div>
+
+
+<div class="main">
+  
+  Two Way Binding
+
+  <input type="text" [(ngModel)]="defaultValue">
+  <div>
+    <h3>
+    {{defaultValue}}
+
+    </h2>
+  </div>
+
+</div> -->

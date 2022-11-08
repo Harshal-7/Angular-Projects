@@ -1,0 +1,36 @@
+<div class="container">
+
+  <!-- <h2>
+    Structural Directives - ngIf
+  </h2>
+
+  <div class="row">
+    <div class="col">
+
+      <button class="btn btn-success" (click)="approve(true)">Approved</button>
+      <button class="btn btn-danger" (click)="approve(false)">Reject</button>
+
+    </div>
+    <div>
+      <p *ngIf="isApproved">Your applicaiton is approved</p>
+      <p *ngIf="!isApproved">Sorry, Your applicaiton is rejected</p>
+
+    </div>
+
+  </div> -->
+
+  <h2>Structural Directives - ngFor</h2>
+
+  <div class="row">
+    <div class="col1">
+
+      <p *ngFor="let no of numbers; let i = index">
+      
+        {{i + 100}} - {{no}}
+      
+      </p>
+
+    </div>
+  </div>
+
+</div>
