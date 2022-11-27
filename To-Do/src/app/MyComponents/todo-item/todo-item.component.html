@@ -1,13 +1,13 @@
 <div class="my-3"> 
-    <div class="title">
-        {{todo.sno}} - {{todo.title}}
+    <div class="title todo-item">
+        {{todo.title}}
     </div>
 
-    <div class="desc">
+    <div class="desc todo-item">
         {{todo.desc}}
     </div>
 
-    <div class="button1">
+    <div class="button1 todo-item">
         <button class="btn btn-sm btn-danger" (click)="OnClick(todo)">Delete</button>
     </div>
 

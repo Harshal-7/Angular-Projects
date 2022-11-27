@@ -1,6 +1,5 @@
-<app-input-todo (todoAdd)="addTodo($event)"></app-input-todo>
-
-<h3> To-Do List </h3>
+<div class="hehe">
+    <app-input-todo (todoAdd)="addTodo($event)"></app-input-todo>
 
 <div class="empty" *ngIf="this.todos.length===0; else elseBlock">Your Todo List is Empty !!</div>
 <ng-template #elseBlock>
@@ -10,3 +9,4 @@
     </div>
 
 </ng-template>
+</div>

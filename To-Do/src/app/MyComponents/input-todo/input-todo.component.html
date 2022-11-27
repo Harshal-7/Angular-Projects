@@ -1,17 +1,18 @@
-<div>
-<h3>
-    Add a Todo
+<div class="input-todo card-border">
+<h3 class="addToDo">
+    Add a To-Do
 </h3>
 
 <form (ngSubmit)="onSubmit()">
     
     <div class="form-group">
-      <label class="l1" for="title">Title of To-Do</label>
+      <label class="l1" for="title">New Task</label>
       <input type="text" [(ngModel)]="title" class="form-control l2" name="title" id="title" aria-describedby="emailHelp">
     </div>
+
     
     <div class="form-group">
-      <label class="l1" for="desc">Description of To-Do</label>
+      <label class="l1" for="desc">Add Details</label>
       <input type="text" [(ngModel)]="desc" name="desc" class="form-control l2" id="desc">
     </div>
     
