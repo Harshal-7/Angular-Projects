@@ -1,0 +1,8 @@
+<app-navbar></app-navbar>
+<app-add-tasks (addTask)="AddTask($event)"></app-add-tasks>
+
+<div *ngFor="let task of tasks">
+    <div class="text-white text-center text-2xl tex">
+        {{task.title}}
+    </div>
+</div>

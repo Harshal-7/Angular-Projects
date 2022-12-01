@@ -1,0 +1,32 @@
+<h1 class="font-mono font-bold text-6xl text-center px-4 py-4 text-white">Tasks</h1>
+
+<form (ngSubmit)="OnSubmit()">
+
+    <div class="mt-14 items-center max-w-md mx-auto">
+        <span class="text-gray-50 mx-2">New Task</span>
+        <input [(ngModel)]="title" class="Form-control mt-2 px-3 py-2 block w-96 rounded-full bg-white
+                border-transparent focus:bg-black text-black focus:text-white focus:ring-0" type="text" name="title">
+    </div>
+
+
+    <div class="mt-10 items-center max-w-md mx-auto">
+        <span class="text-gray-50 mx-2">Description</span>
+        <input [(ngModel)]="desc" class="Form-control mt-2 px-3 py-2 block w-96 rounded-full bg-white 
+                border-transparent focus:bg-black text-black focus:text-white focus:ring-0" type="text" name="desc">
+    </div>
+
+
+    <div class="mt-8 items-center max-w-md mx-auto">
+        <button class="bg-neutral-900 hover:bg-blue-500 hover:text-black text-blue-500 
+                border border-blue-900 w-16 text-sm h-8 rounded-xl" type="submit">Save</button>
+    </div>
+
+
+</form>
+
+<div class="text-white text-start text-3xl my-2 mt-12">
+    {{title}}
+</div>
+<div class="text-white text-center text-base tex">
+    {{desc}}
+</div>
