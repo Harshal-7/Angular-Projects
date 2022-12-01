@@ -1,0 +1,36 @@
+<!-- <div class="text-5xl text-white" *ngIf="this.tasks.length===0; else elseBlock">Your Todo List is Empty !!</div>
+<ng-template #elseBlock>
+
+    <div *ngFor="let task of tasks">
+    </div>
+
+</ng-template> -->
+
+<app-add-tasks (addTask)="AddTask($event)"></app-add-tasks>
+
+<div *ngIf="tasks.length===0; else elseBlock">
+
+    <h1 class="text-5xl text-white text-center mt-24 font-sans">
+        Your Task List is Empty
+    </h1>
+
+</div>
+<ng-template #elseBlock>
+
+    <div *ngFor="let task of tasks">
+    
+        <div class=" text-blue-500 text-center mt-16 mb-5">
+            <div class="text-4xl mb-5">
+                {{task.title}}
+            </div>
+            
+            <div class="text-base ">
+                {{task.desc}}
+            </div>
+        </div>
+    
+    </div>
+
+</ng-template>
+
+

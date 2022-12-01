@@ -26,7 +26,6 @@ export class AddTasksComponent
     }
 
     this.addTask.emit(task);
-
   }
 
 }

@@ -1,12 +1,41 @@
 <div>
-    <nav class="px-5 py-5 bg-neutral-900 text-white">
+    <nav class="px-5 py-5 bg text-white">
       <div>
         <img class="h-7 w-7 fixed" src="assets/task.png" alt="">
       </div>
-      <ul class="flex space-x-9 font-sans justify-end text-2xl font-light">
-        <li class="cursor-pointer">Home</li>
-        <li class="cursor-pointer">About</li>
-        <li class="cursor-pointer">Contact</li>
+      <ul class="flex space-x-6 font-sans justify-end text-2xl font-light">
+
+        <li class="cursor-pointer">
+          <a routerLink = "/home" routerLinkActive = "active" ariaCurrentWhenActive="page">
+            Home
+          </a>
+        </li>
+
+        <!-- <li class="cursor-pointer">
+          <a routerLink = "/add-tasks" routerLinkActive = "active" ariaCurrentWhenActive="page">
+            Add Tasks
+          </a>
+        </li> -->
+<!-- 
+        <li>
+          Add Tasks
+        </li> -->
+        
+        <li class="cursor-pointer">
+          <a routerLink = "/about" routerLinkActive = "active" ariaCurrentWhenActive="page">
+            About
+          </a>
+        </li>
+
+        <li class="cursor-pointer">
+          <a routerLink = "/contact" routerLinkActive = "active" ariaCurrentWhenActive="page">
+            Contact
+          </a>
+        </li>
+
       </ul>
     </nav>
   </div>
+
+
+  <router-outlet></router-outlet>
