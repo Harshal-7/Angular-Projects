@@ -1,33 +1,27 @@
 <div>
-    <nav class="px-5 py-5 bg text-white">
+    <nav class="px-5 items-center flex justify-between py-5 bg text-white">
+      
       <div>
-        <img class="h-7 w-7 fixed" src="assets/task.png" alt="">
+        <img class="h-7 bg-fixed" src="assets/task.png" alt="">
       </div>
-      <ul class="flex space-x-6 font-sans justify-end text-2xl font-light">
 
-        <li class="cursor-pointer">
+      <ul class="flex font-sans  justify-end text-xl space-x-10 font-light">
+
+        <li></li>
+
+        <li class="cursor-pointer hover:text-blue-500">
           <a routerLink = "/home" routerLinkActive = "active" ariaCurrentWhenActive="page">
             Home
           </a>
         </li>
-
-        <!-- <li class="cursor-pointer">
-          <a routerLink = "/add-tasks" routerLinkActive = "active" ariaCurrentWhenActive="page">
-            Add Tasks
-          </a>
-        </li> -->
-<!-- 
-        <li>
-          Add Tasks
-        </li> -->
         
-        <li class="cursor-pointer">
+        <li class="cursor-pointer hover:text-blue-500">
           <a routerLink = "/about" routerLinkActive = "active" ariaCurrentWhenActive="page">
             About
           </a>
         </li>
 
-        <li class="cursor-pointer">
+        <li class="cursor-pointer hover:text-blue-500">
           <a routerLink = "/contact" routerLinkActive = "active" ariaCurrentWhenActive="page">
             Contact
           </a>
