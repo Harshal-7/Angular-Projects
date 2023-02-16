@@ -2,7 +2,7 @@
 
 <div *ngIf="tasks.length===0; else elseBlock">
 
-    <h1 class="px-4 py-4 text-5xl text-slate-300 text-center mt-20 font-sans">
+    <h1 class="px-4 py-4 text-5xl text-center mt-12 emptyList text-indigo-500">
         Your Task List is Empty
     </h1>
 
@@ -10,14 +10,14 @@
 <ng-template #elseBlock>
 
     <div *ngFor="let task of tasks">
-        <div class="px-6 py-6 mt-2">
+        <div class="px-6 py-6 mt-2 navfont text-center">
             
             <div class="">
-                <div class="text-4xl text-blue-600 font-sans mb-3">
+                <div class="text-3xl font-semibold text-white ">
                     {{task.title}}
 
                 </div>
-                <div class="text-base text-gray-300 font-mono">
+                <div class="text-sm font-medium text-gray-200">
                     {{task.desc}}
                 </div>
             </div>

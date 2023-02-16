@@ -22,3 +22,29 @@
         }
       }
 }
+
+@font-face {
+  font-family: 'alegreya';
+  src: url('assets/Alegreya/static/Alegreya-Regular.ttf');
+}
+@font-face {
+  font-family: 'allerta';
+  src: url('assets/Allerta_Stencil/AllertaStencil-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'poiret';
+  src: url('assets/Poiret_One/PoiretOne-Regular.ttf');
+}
+@font-face {
+  font-family: 'lobster_bold';
+  src: url('assets/Lobster_Two/LobsterTwo-Bold.ttf');
+}
+@font-face {
+  font-family: 'lobster';
+  src: url('assets/Lobster_Two/LobsterTwo-Regular.ttf');
+}
+@font-face {
+  font-family: 'dongle';
+  src: url('assets/Dongle/Dongle-Regular.ttf');
+}

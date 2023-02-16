@@ -1,6 +1,14 @@
-<h1 class = "s1">
-  Enter Your Name : 
-</h1>
+<div class="c1">
+  
+  <h1 class = "s1">
+    Enter Your Name : 
+  </h1>
+  
+  <input [(ngModel)] = "Name" type = "text" class="input1">
+  
+  <h1 class="s2">
+    Your name is : <br> 
+    <div class="s3">{{Name}}</div>
+  </h1>
 
-<input [(ngModel)] = "Name" type = "text">
-<h1 class="s2">Your name is : {{Name}}</h1>
+</div>
